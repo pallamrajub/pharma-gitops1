@@ -60,7 +60,6 @@ configmap:
   DRUG_CATALOG_URL: "http://drug-catalog-service:8082"
   NOTIFICATION_URL: "http://notification-service:3000"
   MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: "health,info,metrics,prometheus"
-  SPRING_APPLICATION_JSON: '{"spring":{"cloud":{"gateway":{"default-filters":["DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE"]}}}}'
 
 envFrom:
   - secretRef:
